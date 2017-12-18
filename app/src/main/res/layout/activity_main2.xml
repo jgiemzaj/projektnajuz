@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:background="@android:color/holo_blue_dark"
     tools:context="com.example.justyna.myapplication.MainActivity">
+    RecylerView;
+
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -30,6 +32,7 @@
         android:layout_gravity="center"
         android:text="Lista aktualnie jest niedostępna" />
 </LinearLayout>
+
 
 
 
