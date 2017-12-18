@@ -8,18 +8,27 @@ package com.example.justyna.myapplication;
         import android.widget.EditText;
         import android.widget.TextView;
 
+        import butterknife.ButterKnife;
+        import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity {
 
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+
+
             setContentView(R.layout.activity_main);
             Button btn2 = findViewById(R.id.button_pokaz_liste);
+
             Button btn1 = findViewById(R.id.button_zm_miejsce);
+            ButterKnife.bind(this);
 
             final EditText editText = findViewById(R.id.wpisztekst);
             final TextView miasto = findViewById(R.id.miasto);
+
+
             btn2.setOnClickListener(new View.OnClickListener()
 
             {
