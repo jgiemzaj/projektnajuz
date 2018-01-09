@@ -1,15 +1,17 @@
 package com.example.justyna.myapplication;
-
 /**
  * Created by student on 2017-12-18.
  */
-
 public class Place {
-
-    String placeName;
+    public String placeName;
     public int temperature;
-    String information;
+    public String information;
 
+    public Place(String placeName, int temperature, String information) {
+        this.placeName = placeName;
+        this.temperature = temperature;
+        this.information = information;
+    }
 
     public String getPlaceName() {
         return placeName;
@@ -35,3 +37,5 @@ public class Place {
         this.information = information;
     }
 }
+
+
